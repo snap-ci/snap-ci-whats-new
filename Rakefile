@@ -8,8 +8,7 @@ task :upload, :s3_bucket do |_, params|
   else
     begin
       sh("aws s3 mb s3://#{s3_bucket}")
-      sh(%Q{aws s3api put-bucket-acl --bucket #{s3_bucket} --grant-full-control 'emailaddress="snap-ci@thoughtworks.com"'})
-      sh(%Q{aws s3api put-bucket-acl --bucket #{s3_bucket} --grant-read 'uri="http://acs.amazonaws.com/groups/global/AllUsers"'})
+      sh(%Q{aws s3api put-bucket-acl --bucket #{s3_bucket} --grant-full-control 'emailaddress="snap-ci@thoughtworks.com"' --grant-read 'uri="http://acs.amazonaws.com/groups/global/AllUsers"'})
     rescue => e
       puts "Failed to setup bucket: #{e.message}"
       puts ""
