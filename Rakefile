@@ -1,3 +1,5 @@
+require_relative 'env'
+
 $PROJECT_ROOT = Dir.pwd
 
 desc "Uploads changelogs to S3"
