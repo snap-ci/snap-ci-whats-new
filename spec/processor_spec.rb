@@ -2,7 +2,7 @@ require_relative '../env'
 require 'tmpdir'
 require 'json'
 
-describe Renderer do
+describe Processor do
   it 'renderes changelogs to output folder' do
     inputdir = Dir.mktmpdir
     outputdir = Dir.mktmpdir
@@ -15,7 +15,7 @@ describe Renderer do
       f.write('Content 2')
     end
 
-    Renderer.new.render(inputdir, outputdir)
+    Processor.new.render(inputdir, outputdir)
 
     changelog_data = {
       changelog: [

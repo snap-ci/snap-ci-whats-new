@@ -11,7 +11,7 @@ task :process do
   sh("rm -rf #{OUTPUT_PATH}")
   sh("mkdir -p #{OUTPUT_PATH}")
 
-  Renderer.new.render(bucket_content_local_path, OUTPUT_PATH)
+  Processor.new.render(bucket_content_local_path, OUTPUT_PATH)
 end
 
 desc "Uploads content of output folder to S3"
