@@ -1,4 +1,5 @@
 require_relative 'env'
+require 'json'
 
 OUTPUT_PATH = 'output'
 
@@ -24,6 +25,16 @@ task :upload, [:s3_bucket] => :process do |_, params|
     begin
       sh("aws s3 mb s3://#{s3_bucket}")
       sh(%Q{aws s3api put-bucket-acl --bucket #{s3_bucket} --grant-full-control 'emailaddress="snap-ci@thoughtworks.com"' --grant-read 'uri="http://acs.amazonaws.com/groups/global/AllUsers"'})
+      cors_config = {
+        "CORSRules" => [
+          {
+            "AllowedMethods" => ["GET"],
+            "AllowedOrigins" => ["*"]
+          }
+        ]
+      }
+
+      sh("aws s3api put-bucket-cors --bucket #{s3_bucket} --cors-configuration '#{cors_config.to_json}'")
     rescue => e
       puts "Failed to setup bucket: #{e.message}"
       puts ""
@@ -31,5 +42,5 @@ task :upload, [:s3_bucket] => :process do |_, params|
   end
 
   puts "Uploading files from #{OUTPUT_PATH} to S3 bucket #{s3_bucket}"
-  sh("aws s3 sync --delete --storage-class REDUCED_REDUNDANCY #{OUTPUT_PATH} s3://#{s3_bucket}/ --grants 'read=uri=http://acs.amazonaws.com/groups/global/AllUsers' 'full=emailaddress=snap-ci@thoughtworks.com'")
+  sh("aws s3 sync --delete --headers 'Access-Control-Allow-Origin:*' --storage-class REDUCED_REDUNDANCY #{OUTPUT_PATH} s3://#{s3_bucket}/ --grants 'read=uri=http://acs.amazonaws.com/groups/global/AllUsers' 'full=emailaddress=snap-ci@thoughtworks.com'")
 end
