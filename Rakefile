@@ -8,8 +8,8 @@ desc "Process changelogs and creates .json files in output folder"
 task :process do
   bucket_content_local_path = 'changelog'
 
-  sh("rm -rf #{OUTPUT_PATH}")
   sh("mkdir -p #{OUTPUT_PATH}")
+  sh("rm -rf #{OUTPUT_PATH}/*")
 
   Processor.new.render(bucket_content_local_path, OUTPUT_PATH)
 end
