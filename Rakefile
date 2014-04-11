@@ -1,10 +1,23 @@
 require_relative 'env'
 
-$PROJECT_ROOT = Dir.pwd
+Rake::TaskManager.record_task_metadata = true
 
-desc "Uploads changelogs to S3"
+OUTPUT_PATH = 'output'
+
+desc "Process changelogs and creates .json files in output folder"
+task :process do
+  bucket_content_local_path = 'changelog'
+
+  sh("rm -rf #{OUTPUT_PATH}")
+  sh("mkdir -p #{OUTPUT_PATH}")
+
+  Renderer.new.render(bucket_content_local_path, OUTPUT_PATH)
+end
+
+desc "Uploads content of output folder to S3"
 task :upload, :s3_bucket do |_, params|
   s3_bucket = params[:s3_bucket]
+
   if s3_bucket.nil?
     puts 'Usage: rake upload[S3_BUCKET]'
   else
@@ -15,7 +28,7 @@ task :upload, :s3_bucket do |_, params|
       puts "Failed to setup bucket: #{e.message}"
       puts ""
     end
-
-    sh("aws s3 sync --storage-class REDUCED_REDUNDANCY changelog s3://#{s3_bucket}/ --grants 'read=uri=http://acs.amazonaws.com/groups/global/AllUsers' 'full=emailaddress=snap-ci@thoughtworks.com'")
   end
+
+  sh("aws s3 sync --storage-class REDUCED_REDUNDANCY #{OUTPUT_PATH} s3://#{s3_bucket}/ --grants 'read=uri=http://acs.amazonaws.com/groups/global/AllUsers' 'full=emailaddress=snap-ci@thoughtworks.com'")
 end
