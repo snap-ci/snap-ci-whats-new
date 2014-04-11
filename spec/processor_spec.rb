@@ -27,4 +27,16 @@ describe Processor do
     JSON.parse(File.read(File.join(outputdir, 'changelog.json')), symbolize_names: true).should == changelog_data
     JSON.parse(File.read(File.join(outputdir, 'latest_changes.json')), symbolize_names: true).should == { changelog: [changelog_data[:changelog].first] }
   end
+
+  it 'renders empty file when no changelogs are present' do
+    inputdir = Dir.mktmpdir
+    outputdir = Dir.mktmpdir
+
+    Processor.new.run(inputdir, outputdir)
+
+    changelog_data = { changelog: [] }
+
+    JSON.parse(File.read(File.join(outputdir, 'changelog.json')), symbolize_names: true).should == changelog_data
+    JSON.parse(File.read(File.join(outputdir, 'latest_changes.json')), symbolize_names: true).should == changelog_data
+  end
 end

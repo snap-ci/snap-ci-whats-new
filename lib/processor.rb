@@ -6,9 +6,8 @@ class Processor
       { date: changelog.date, body: changelog.body }
     end
 
-
     File.open(File.join(to_dir, 'changelog.json'), 'w') { |f| f.write({ changelog: changelog_data }.to_json) }
-    File.open(File.join(to_dir, 'latest_changes.json'), 'w') { |f| f.write({ changelog: [changelog_data.first] }.to_json) }
+    File.open(File.join(to_dir, 'latest_changes.json'), 'w') { |f| f.write({ changelog: [changelog_data.first].compact }.to_json) }
   end
 
   private
