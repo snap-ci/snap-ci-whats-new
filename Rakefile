@@ -11,7 +11,9 @@ task :process do
   sh("mkdir -p #{OUTPUT_PATH}")
   sh("rm -rf #{OUTPUT_PATH}/*")
 
-  Processor.new.render(bucket_content_local_path, OUTPUT_PATH)
+  puts "Processing files from #{bucket_content_local_path} to #{OUTPUT_PATH}"
+
+  Processor.new.run(bucket_content_local_path, OUTPUT_PATH)
 end
 
 desc "Uploads content of output folder to S3"
@@ -30,5 +32,6 @@ task :upload, :s3_bucket do |_, params|
     end
   end
 
+  puts "Uploading files from #{OUTPUT_PATH} to S3 bucket #{s3_bucket}"
   sh("aws s3 sync --storage-class REDUCED_REDUNDANCY #{OUTPUT_PATH} s3://#{s3_bucket}/ --grants 'read=uri=http://acs.amazonaws.com/groups/global/AllUsers' 'full=emailaddress=snap-ci@thoughtworks.com'")
 end

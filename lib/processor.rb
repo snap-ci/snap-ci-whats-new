@@ -1,7 +1,7 @@
 require 'json'
 
 class Processor
-  def render(from_dir, to_dir)
+  def run(from_dir, to_dir)
     changelog_data = Rollin::Blog.new(articles_folder: from_dir).articles.map do |changelog|
       { date: changelog.date, body: changelog.body }
     end

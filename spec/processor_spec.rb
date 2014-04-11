@@ -15,7 +15,7 @@ describe Processor do
       f.write('Content 2')
     end
 
-    Processor.new.render(inputdir, outputdir)
+    Processor.new.run(inputdir, outputdir)
 
     changelog_data = {
       changelog: [
