@@ -15,7 +15,7 @@ task :process do
 end
 
 desc "Uploads content of output folder to S3"
-task :upload, :s3_bucket do |_, params|
+task :upload, [:s3_bucket] => :process do |_, params|
   s3_bucket = params[:s3_bucket]
 
   if s3_bucket.nil?
