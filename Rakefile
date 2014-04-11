@@ -1,7 +1,5 @@
 require_relative 'env'
 
-Rake::TaskManager.record_task_metadata = true
-
 OUTPUT_PATH = 'output'
 
 desc "Process changelogs and creates .json files in output folder"
