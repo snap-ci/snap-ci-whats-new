@@ -1,4 +1,1 @@
-In this release we have introduced a few very awesome changes.
-
-* Introducing the all brand new What's New section!
-* More stuffs
+Well, first off, we get to make these announcements!
