@@ -42,5 +42,5 @@ task :upload, [:s3_bucket] => :process do |_, params|
   end
 
   puts "Uploading files from #{OUTPUT_PATH} to S3 bucket #{s3_bucket}"
-  sh("aws s3 sync --delete --storage-class REDUCED_REDUNDANCY #{OUTPUT_PATH} s3://#{s3_bucket}/ --grants 'read=uri=http://acs.amazonaws.com/groups/global/AllUsers' 'full=emailaddress=snap-ci@thoughtworks.com'")
+  sh("aws s3 sync --delete --storage-class REDUCED_REDUNDANCY #{OUTPUT_PATH} s3://#{s3_bucket}/ --cache-control 'max-age=7200' --grants 'read=uri=http://acs.amazonaws.com/groups/global/AllUsers' 'full=emailaddress=snap-ci@thoughtworks.com'")
 end
