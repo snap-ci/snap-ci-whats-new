@@ -1,6 +1,6 @@
 We have a few useful changes in this update:
 
-Miscellaneous Improvements:
+### Miscellaneous Improvements:
 
 * Snap will let you re-run any previous build.
 * The "rerun last pipeline" link has been removed.
