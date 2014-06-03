@@ -2,7 +2,7 @@ Pipeline parallelization!
 
 * Pipelines are capable of running in parallel. For more information about this feature <a href="http://docs.snap-ci.com/speeding_up_builds/pipeline_parallelism/" target='_blank'>click here</a>.
 * So that everyone gets to see what pipeline parallelization looks like - all trial plans now run 2 pipelines in parallel.
-* This feature may require you setup your pipeline with setup tasks. Setup tasks should assume that the stage may run on a new build machine and should perform the setup accordingly. Use `bundle install ...`, `npm install ...` or `pip install ...` for setup tasks.
+* This feature may require you setup your pipeline with setup tasks. Setup tasks should assume that the stage may run on a new build machine and should perform the setup accordingly. Use `bundle install ...`, `npm install ...` or `pip install ...` for setup tasks. For more information <a href="http://docs.snap-ci.com/speeding_up_builds/setup_tasks/" target='_blank'>click here</a>.
 
 Stage/Deployment history
 
