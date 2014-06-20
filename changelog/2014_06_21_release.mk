@@ -7,4 +7,4 @@ Here are some things we released:
 
 Find out more about what is [installed on build machines](http://docs.snap-ci.com/supported_platforms/) provided by Snap.
 
-We want to hear from you! If you have any feedback or features you would love to see in Snap, <a href="http://snap-ci.com/contact-us">click here</a> and let us know.
+We want to hear from you! If you have any feedback or features you would love to see in Snap, [click here](http://snap-ci.com/contact-us) and let us know.
