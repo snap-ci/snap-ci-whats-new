@@ -2,6 +2,7 @@ Here are some things we released:
 
 * Upgrades to google chrome and chromedriver to the latest and greatest version, this has been a long pending change.
 * Upgrade the version of QT from 4.8 to 5.2.
+* Upgrade the version of bundler from 1.5.2 to 1.6.3. You may use `bundle install -j4` to speed up builds.
 * Fix a bug where some users were receiving email notifications from repositories they were not watching, but collaborating on.
 
 Find out more about what is [installed on build machines](http://docs.snap-ci.com/supported_platforms/)provided by Snap.
