@@ -5,6 +5,6 @@ Here are some things we released:
 * Upgrade the version of bundler from 1.5.2 to 1.6.3. You may use `bundle install -j4` to speed up builds.
 * Fix a bug where some users were receiving email notifications from repositories they were not watching, but collaborating on.
 
-Find out more about what is [installed on build machines](http://docs.snap-ci.com/supported_platforms/)provided by Snap.
+Find out more about what is [installed on build machines](http://docs.snap-ci.com/supported_platforms/) provided by Snap.
 
 We want to hear from you! If you have any feedback or features you would love to see in Snap, <a href="http://snap-ci.com/contact-us">click here</a> and let us know.
