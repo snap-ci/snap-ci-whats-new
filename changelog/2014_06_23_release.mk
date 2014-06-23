@@ -2,7 +2,7 @@ Here are some things we released:
 
 * Upgrades to google chrome and chromedriver to the latest and greatest version, this has been a long pending change.
 * Upgrade the version of QT from 4.8 to 5.2.
-* Upgrade the version of bundler from 1.5.2 to 1.6.3. You may use `bundle install -j4` to speed up builds. You may use `bundle install -j4 --path $HOME/.bundle` to futher improve speeds further.
+* Upgrade the version of bundler from 1.5.2 to 1.6.3. You may use `bundle install -j4` to speed up builds. You may use `bundle install -j4 --path $HOME/.bundle` to futher improve speeds.
 * Fix a bug where some users were receiving email notifications from repositories they were not watching, but collaborating on.
 * Improved the project setup experience.
 
