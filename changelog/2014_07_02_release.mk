@@ -4,7 +4,7 @@ Faster builds
 * Build history improved feedback time.
 * Build history page now shows *scheduled* and *cloning* states, so you have a better sense of what is going in the first moments of each pipeline stage.
 
-An all brand new Pipeline Configuration page
+An all brand new Pipeline Configuration Edit page
 
 * Cleaner interface.
 * Intuitive editing.
