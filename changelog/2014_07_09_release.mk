@@ -4,7 +4,7 @@ Snap now supports PHP. You can select your favorite version from the PHP languag
 
 Snap now detects when your build runs out of memory. We'll send you an email when this happens. You now have the option to get in touch with us and request more resources to run your build.
 
-We now provide a few more environment variables for your builds:
+We now provide a few more [environment variables](http://docs.snap-ci.com/environment_variables/) for your builds:
 
 * `TRACKING_PIPELINE` - set to `true` if the pipeline is a tracking pipeline
 * `INTEGRATION_PIPELINE` - set to `true` if the pipeline is an integration pipeline
