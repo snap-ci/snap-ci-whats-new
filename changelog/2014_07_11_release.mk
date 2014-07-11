@@ -1,0 +1,5 @@
+It's easier to access your builds on Snap!
+
+* We added a dropdown where you can check your builds status and easily navigate between them
+
+You can also go now straight from a stage logs to the configuration.
