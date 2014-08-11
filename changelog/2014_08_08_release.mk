@@ -1,6 +1,6 @@
 It's easier to diagnose your builds on Snap!
 
-* We added a command `snap-shell` that will assist with diagnosing problems with your build. Using this command as part of your project configuration will provide web based command line when you visit the build history page. Read more about it on [our blog](http://blogs.snap-ci.com/blog/2014/08/01/introducing-snap-shell/).
+* We added a command `snap-shell` that will assist with diagnosing problems with your build. Using this command as part of your project configuration will provide web based command line when you visit the build history page. Read more about it on [our blog](http://blog.snap-ci.com/blog/2014/08/11/introducing-snap-shell/).
 
 Where's my API?
 
