@@ -2,7 +2,7 @@ It's easier to diagnose your builds on Snap!
 
 * We added a command `snap-shell` that will assist with diagnosing problems with your build. Using this command as part of your project configuration will provide web based command line when you visit the build history page. Read more about it on [our blog](http://blog.snap-ci.com/blog/2014/08/11/introducing-snap-shell/).
 
-Dude! Where's my API?
+Dudine! Where's my API?
 
 * Many users asked us for API access to be able to trigger builds. Snap now offers the ability to trigger manual stages, and new pipelines. Read more about it on [our docs](http://docs.snap-ci.com/api/introduction/).
 
