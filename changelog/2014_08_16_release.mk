@@ -1,6 +1,6 @@
 Now it's easier to PHP on Snap!
 
-* You can now use the command add_php_configuration to add custom configuration ini files! Just create a command on your stage containing:
+* You can now use the command add-php-configuration to add custom configuration ini files! Just create a command on your stage containing:
       add-php-configuration <path to config ini file>
 * The same for enabling extensions! Create a command containing:
       enable-php-extension <extension name>
