@@ -1,7 +1,9 @@
 More love for artifacts
 
-* You can even specify glob patterns as artifacts. Examples such as `target/*.jar` or `target/**/*.{deb,rpm}` will now work in Snap.
+* You may now specify glob patterns as artifacts. Examples such as `target/*.jar` or `target/**/*.{deb,rpm}` will now work in Snap.
 * Snap now allows files as artifacts.
+
+Read more about artifacts in our [documentation](http://docs.snap-ci.com/pipeline/#artifact)
 
 Even moar `sudo`!
 
