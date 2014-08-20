@@ -7,5 +7,9 @@ Read more about artifacts in our [documentation](http://docs.snap-ci.com/pipelin
 
 Even moar `sudo`!
 
-* Snap earlier allowed limited `sudo` access for installing packages and managing services. We now offer you the convenience and power of full sudo access. You can now configure your build machine to your heart's content.
-* Need extensive configuration - just throw in chef/puppet command in your configuration!
+* Snap earlier allowed limited `sudo` access for installing packages and managing services. We now offer you the convenience and power of full sudo access.
+* You can now configure your build machine to your heart's content. Need extensive configuration - just throw in chef/puppet command in your configuration!
+
+More freedom in defining stage names
+
+* Stage names can now have numbers, hyphens and underscores. Examples are: `Fast_Feedback-1`, `Smoke-Deploy` and so on.
