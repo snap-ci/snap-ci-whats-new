@@ -1,0 +1,8 @@
+More love for artifacts
+
+* You can even specify glob patterns as artifacts. Examples such as `target/*.jar` or `target/**/*.{deb,rpm}` will now work in Snap.
+* Snap now allows files as artifacts.
+
+Even moar `sudo`!
+
+Snap earlier allowed limited `sudo` access for installing packages and managing services. We now offer you the convenience and power of full sudo access. You can now configure your build machine to your heart's content. Need extensive configuration - just throw in chef/puppet command in your configuration!
