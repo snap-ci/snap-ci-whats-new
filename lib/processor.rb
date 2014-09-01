@@ -11,21 +11,20 @@ class Processor
 
     unless ENV['SNAP_CI']
       File.open(File.join(to_dir, 'changelog.html'), 'w') do |f|
-        changelog_data.each do |cl|
-          f.puts "<article>"
-          f.puts "<h1>#{cl[:date]}</h1>"
-          f.puts cl[:body]
-          f.puts "</article>"
-        end
+        changelog_data.each { |changeset| render_preview(f, changeset) }
       end
 
       File.open(File.join(to_dir, 'latest_changes.html'), 'w') do |f|
-        cl = changelog_data.first
-        f.puts "<article>"
-        f.puts "<h1>#{cl[:date]}</h1>"
-        f.puts cl[:body]
-        f.puts "</article>"
+        render_preview(f, changelog_data.first)
       end
     end
+  end
+
+  def render_preview(file, changeset)
+    return unless changeset
+    file.puts "<article>"
+    file.puts "<h1>#{changeset[:date]}</h1>"
+    file.puts changeset[:body]
+    file.puts "</article>"
   end
 end

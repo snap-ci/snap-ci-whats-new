@@ -7,11 +7,11 @@ describe Processor do
     inputdir = Dir.mktmpdir
     outputdir = Dir.mktmpdir
 
-    File.open(File.join(inputdir, '2010_01_01_Whats_new.mk'), 'w') do |f|
+    File.open(File.join(inputdir, '2010_01_01_Whats_new.md'), 'w') do |f|
       f.write('Content 1')
     end
 
-    File.open(File.join(inputdir, '2010_01_02_Whats_new.mk'), 'w') do |f|
+    File.open(File.join(inputdir, '2010_01_02_Whats_new.md'), 'w') do |f|
       f.write('Content 2')
     end
 
