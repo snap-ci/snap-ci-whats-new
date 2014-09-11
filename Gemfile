@@ -7,3 +7,9 @@ group 'test' do
   gem 'rspec'
   gem 'debugger'
 end
+
+group 'broadcast' do
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'debugger'
+end
