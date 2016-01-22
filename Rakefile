@@ -3,7 +3,7 @@ require 'json'
 
 OUTPUT_PATH = 'output'
 
-desc "Process changelogs and creates .json files in output folder"
+desc 'Process changelogs and creates .json files in output folder'
 task :process do
   bucket_content_local_path = 'changelog'
 
@@ -15,7 +15,7 @@ task :process do
   Processor.new.run(bucket_content_local_path, OUTPUT_PATH)
 end
 
-desc "Uploads content of output folder to S3"
+desc 'Uploads content of output folder to S3'
 task :upload, [:s3_bucket] => :process do |_, params|
   s3_bucket = params[:s3_bucket]
 
@@ -24,7 +24,7 @@ task :upload, [:s3_bucket] => :process do |_, params|
   else
     begin
       sh("aws s3 mb s3://#{s3_bucket}")
-      sh(%Q{aws s3api put-bucket-acl --bucket #{s3_bucket} --grant-full-control 'emailaddress="snap-ci@thoughtworks.com"' --grant-read 'uri="http://acs.amazonaws.com/groups/global/AllUsers"'})
+      sh(%Q{AWS_ACCESS_KEY_ID=#{ENV['S3_ACCESS_KEY_ID']} AWS_SECRET_KEY_ID=#{ENV['S3_AWS_SECRET_KEY_ID']} aws s3api put-bucket-acl --bucket #{s3_bucket} --grant-full-control 'emailaddress="snap-ci@thoughtworks.com"' --grant-read 'uri="http://acs.amazonaws.com/groups/global/AllUsers"'})
       cors_config = {
         "CORSRules" => [
           {
