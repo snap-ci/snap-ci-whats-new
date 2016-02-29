@@ -13,6 +13,9 @@ task :process do
   puts "Processing files from #{bucket_content_local_path} to #{OUTPUT_PATH}"
 
   Processor.new.run(bucket_content_local_path, OUTPUT_PATH)
+
+  puts "Copying assets to #{OUTPUT_PATH}"
+  sh("cp -r assets #{OUTPUT_PATH}")
 end
 
 desc 'Uploads content of output folder to S3'

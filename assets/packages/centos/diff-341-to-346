@@ -1,0 +1,220 @@
+45,46c45
+< bind-libs-9.8.2-0.37.rc1.el6_7.5.x86_64
+---
+> bind-libs-9.8.2-0.37.rc1.el6_7.6.x86_64
+64c63
+< chkconfig-1.3.49.3-5.el6.x86_64
+---
+> chkconfig-1.3.49.3-5.el6_7.2.x86_64
+73c72
+< couchdb-1.6.1-1.6.1-20160121222747.x86_64
+---
+> couchdb-1.6.1-1.6.1-20160126210116.x86_64
+154,157c153,156
+< firebird-devel-2.5.5.26952.0-1.el6.x86_64
+< firebird-libfbclient-2.5.5.26952.0-1.el6.x86_64
+< firebird-libfbembed-2.5.5.26952.0-1.el6.x86_64
+< firefox-38.5.0-2.el6.centos.x86_64
+---
+> firebird-devel-2.5.5.26952.0-2.el6.x86_64
+> firebird-libfbclient-2.5.5.26952.0-2.el6.x86_64
+> firebird-libfbembed-2.5.5.26952.0-2.el6.x86_64
+> firefox-38.6.1-1.el6.centos.x86_64
+188c187
+< git-2.7.0-2.7.0-20160119134536.x86_64
+---
+> git-2.7.0-2.7.0-20160223134536.x86_64
+193,197c192,196
+< glibc-2.12-1.166.el6_7.3.i686
+< glibc-2.12-1.166.el6_7.3.x86_64
+< glibc-common-2.12-1.166.el6_7.3.x86_64
+< glibc-devel-2.12-1.166.el6_7.3.x86_64
+< glibc-headers-2.12-1.166.el6_7.3.x86_64
+---
+> glibc-2.12-1.166.el6_7.7.i686
+> glibc-2.12-1.166.el6_7.7.x86_64
+> glibc-common-2.12-1.166.el6_7.7.x86_64
+> glibc-devel-2.12-1.166.el6_7.7.x86_64
+> glibc-headers-2.12-1.166.el6_7.7.x86_64
+204,215c203,214
+< google-chrome-driver-2.10-2.10.267518-20160119133041.x86_64
+< google-chrome-driver-2.11-2.11.298611-20160119133041.x86_64
+< google-chrome-driver-2.12-2.12.301324-20160119133041.x86_64
+< google-chrome-driver-2.13-2.13.307649-20160119133041.x86_64
+< google-chrome-driver-2.14-2.14.313457-20160119133041.x86_64
+< google-chrome-driver-2.15-2.15.322448-20160119133041.x86_64
+< google-chrome-driver-2.16-2.16.333243-20160119133041.x86_64
+< google-chrome-driver-2.17-2.17.340116-20160119133041.x86_64
+< google-chrome-driver-2.18-2.18.343837-20160119133041.x86_64
+< google-chrome-driver-2.19-2.19.346067-20160119133041.x86_64
+< google-chrome-driver-wrapper-1.0-20160119133041.x86_64
+< google-chrome-stable-48.0.2564.82-1.x86_64
+---
+> google-chrome-driver-2.10-2.10.267518-20160223133059.x86_64
+> google-chrome-driver-2.11-2.11.298611-20160223133059.x86_64
+> google-chrome-driver-2.12-2.12.301324-20160223133059.x86_64
+> google-chrome-driver-2.13-2.13.307649-20160223133059.x86_64
+> google-chrome-driver-2.14-2.14.313457-20160223133059.x86_64
+> google-chrome-driver-2.15-2.15.322448-20160223133059.x86_64
+> google-chrome-driver-2.16-2.16.333243-20160223133059.x86_64
+> google-chrome-driver-2.17-2.17.340116-20160223133059.x86_64
+> google-chrome-driver-2.18-2.18.343837-20160223133059.x86_64
+> google-chrome-driver-2.19-2.19.346067-20160223133059.x86_64
+> google-chrome-driver-wrapper-1.0-20160223133059.x86_64
+> google-chrome-stable-48.0.2564.116-1.x86_64
+239c238
+< initscripts-9.03.49-1.el6.centos.3.x86_64
+---
+> initscripts-9.03.49-1.el6.centos.4.x86_64
+254,257c253,256
+< kernel-2.6.32-573.12.1.el6.x86_64
+< kernel-devel-2.6.32-573.12.1.el6.x86_64
+< kernel-firmware-2.6.32-573.12.1.el6.noarch
+< kernel-headers-2.6.32-573.12.1.el6.x86_64
+---
+> kernel-2.6.32-573.18.1.el6.x86_64
+> kernel-devel-2.6.32-573.18.1.el6.x86_64
+> kernel-firmware-2.6.32-573.18.1.el6.noarch
+> kernel-headers-2.6.32-573.18.1.el6.x86_64
+443,448c442,447
+< mysql-community-client-5.6.28-2.el6.x86_64
+< mysql-community-common-5.6.28-2.el6.x86_64
+< mysql-community-devel-5.6.28-2.el6.x86_64
+< mysql-community-libs-5.6.28-2.el6.x86_64
+< mysql-community-libs-compat-5.6.28-2.el6.x86_64
+< mysql-community-server-5.6.28-2.el6.x86_64
+---
+> mysql-community-client-5.6.29-2.el6.x86_64
+> mysql-community-common-5.6.29-2.el6.x86_64
+> mysql-community-devel-5.6.29-2.el6.x86_64
+> mysql-community-libs-5.6.29-2.el6.x86_64
+> mysql-community-libs-compat-5.6.29-2.el6.x86_64
+> mysql-community-server-5.6.29-2.el6.x86_64
+466c465
+< nscd-2.12-1.166.el6_7.3.x86_64
+---
+> nscd-2.12-1.166.el6_7.7.x86_64
+475c474
+< ntsysv-1.3.49.3-5.el6.x86_64
+---
+> ntsysv-1.3.49.3-5.el6_7.2.x86_64
+480c479
+< openssh-6.6p1-6.6p1-20160119133039.x86_64
+---
+> openssh-6.6p1-6.6p1-20160223133050.x86_64
+510c509
+< phantomjs-1.9.2-20160119134044.x86_64
+---
+> phantomjs-1.9.2-20160223134039.x86_64
+512,514c511,513
+< php-5.3.28-5.3.28-20160119140052.x86_64
+< php-5.4.31-5.4.31-20160119140052.x86_64
+< php-5.5.15-5.5.15-20160119140052.x86_64
+---
+> php-5.3.28-5.3.28-20160223140118.x86_64
+> php-5.4.31-5.4.31-20160223140118.x86_64
+> php-5.5.15-5.5.15-20160223140118.x86_64
+516,519c515,518
+< php-5.6.13-5.6.13-20160119140052.x86_64
+< php-5.6.14-5.6.14-20160119140052.x86_64
+< php-5.6.15-5.6.15-20160119140052.x86_64
+< php-5.6.3-5.6.3-20160119140052.x86_64
+---
+> php-5.6.13-5.6.13-20160223140118.x86_64
+> php-5.6.14-5.6.14-20160223140118.x86_64
+> php-5.6.15-5.6.15-20160223140118.x86_64
+> php-5.6.3-5.6.3-20160223140118.x86_64
+528c527
+< poppler-0.12.4-4.el6_6.1.x86_64
+---
+> poppler-0.12.4-5.el6_7.1.x86_64
+530c529
+< poppler-utils-0.12.4-4.el6_6.1.x86_64
+---
+> poppler-utils-0.12.4-5.el6_7.1.x86_64
+543,557c542,556
+< postgresql92-9.2.14-1PGDG.rhel6.x86_64
+< postgresql92-contrib-9.2.14-1PGDG.rhel6.x86_64
+< postgresql92-devel-9.2.14-1PGDG.rhel6.x86_64
+< postgresql92-libs-9.2.14-1PGDG.rhel6.x86_64
+< postgresql92-server-9.2.14-1PGDG.rhel6.x86_64
+< postgresql93-9.3.10-1PGDG.rhel6.x86_64
+< postgresql93-contrib-9.3.10-1PGDG.rhel6.x86_64
+< postgresql93-devel-9.3.10-1PGDG.rhel6.x86_64
+< postgresql93-libs-9.3.10-1PGDG.rhel6.x86_64
+< postgresql93-server-9.3.10-1PGDG.rhel6.x86_64
+< postgresql94-9.4.5-1PGDG.rhel6.x86_64
+< postgresql94-contrib-9.4.5-1PGDG.rhel6.x86_64
+< postgresql94-devel-9.4.5-1PGDG.rhel6.x86_64
+< postgresql94-libs-9.4.5-1PGDG.rhel6.x86_64
+< postgresql94-server-9.4.5-1PGDG.rhel6.x86_64
+---
+> postgresql92-9.2.15-1PGDG.rhel6.x86_64
+> postgresql92-contrib-9.2.15-1PGDG.rhel6.x86_64
+> postgresql92-devel-9.2.15-1PGDG.rhel6.x86_64
+> postgresql92-libs-9.2.15-1PGDG.rhel6.x86_64
+> postgresql92-server-9.2.15-1PGDG.rhel6.x86_64
+> postgresql93-9.3.11-1PGDG.rhel6.x86_64
+> postgresql93-contrib-9.3.11-1PGDG.rhel6.x86_64
+> postgresql93-devel-9.3.11-1PGDG.rhel6.x86_64
+> postgresql93-libs-9.3.11-1PGDG.rhel6.x86_64
+> postgresql93-server-9.3.11-1PGDG.rhel6.x86_64
+> postgresql94-9.4.6-1PGDG.rhel6.x86_64
+> postgresql94-contrib-9.4.6-1PGDG.rhel6.x86_64
+> postgresql94-devel-9.4.6-1PGDG.rhel6.x86_64
+> postgresql94-libs-9.4.6-1PGDG.rhel6.x86_64
+> postgresql94-server-9.4.6-1PGDG.rhel6.x86_64
+569,574c568,573
+< python-2.6.9-2.6.9-20160119141032.x86_64
+< python-2.7.6-2.7.6-20160119141032.x86_64
+< python-2.7.9-2.7.9-20160119141032.x86_64
+< python-3.3.5-3.3.5-20160119141032.x86_64
+< python-3.4.0-3.4.0-20160119141032.x86_64
+< python-3.5.0-3.5.0-20160119141032.x86_64
+---
+> python-2.6.9-2.6.9-20160223141101.x86_64
+> python-2.7.6-2.7.6-20160223141101.x86_64
+> python-2.7.9-2.7.9-20160223141101.x86_64
+> python-3.3.5-3.3.5-20160223141101.x86_64
+> python-3.4.0-3.4.0-20160223141101.x86_64
+> python-3.5.0-3.5.0-20160223141101.x86_64
+588,591c587,591
+< qt5-qtbase-5.5.1-2.el6.x86_64
+< qt5-qtbase-common-5.5.1-2.el6.noarch
+< qt5-qtbase-devel-5.5.1-2.el6.x86_64
+< qt5-qtbase-gui-5.5.1-2.el6.x86_64
+---
+> qt5-qdoc-5.5.1-11.el6.x86_64
+> qt5-qtbase-5.5.1-11.el6.x86_64
+> qt5-qtbase-common-5.5.1-11.el6.noarch
+> qt5-qtbase-devel-5.5.1-11.el6.x86_64
+> qt5-qtbase-gui-5.5.1-11.el6.x86_64
+610c610
+< redis-3.0.6-1.el6.remi.x86_64
+---
+> redis-3.0.7-2.el6.remi.x86_64
+622,623c622,624
+< ruby-2.0.0-p598-2.0.0.598-20151229142305.x86_64
+< s3cmd-1.6.0-3.el6.noarch
+---
+> ruby-2.0.0-p598-2.0.0.598-20160223142324.x86_64
+> ruby-2.2.4-2.2.4.-20160223142633.x86_64
+> s3cmd-1.6.1-1.el6.noarch
+641,643c642,644
+< sun-java-1.6-1.6-20160119133541.x86_64
+< sun-java-1.7-1.7-20160119133649.x86_64
+< sun-java-1.8-1.8-20160119133734.x86_64
+---
+> sun-java-1.6-1.6-20160223133549.x86_64
+> sun-java-1.7-1.7-20160223133826.x86_64
+> sun-java-1.8-1.8-20160223133911.x86_64
+658,659c659,660
+< tzdata-2015g-2.el6.noarch
+< tzdata-java-2015g-2.el6.noarch
+---
+> tzdata-2016a-2.el6.noarch
+> tzdata-java-2016a-2.el6.noarch
+683,685d683
+< xcb-util-image-0.3.9-4.el6.x86_64
+< xcb-util-keysyms-0.3.9-5.el6.x86_64
+< xcb-util-wm-0.3.9-5.el6.x86_64
