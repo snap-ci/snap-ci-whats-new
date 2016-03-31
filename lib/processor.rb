@@ -21,7 +21,7 @@ class Processor
   end
 
   def generate_changelog_data
-    Dir.glob(File.join(@from_dir, "*")).map do |article|
+    Dir.glob(File.join(@from_dir, "*")).sort.reverse.map do |article|
       {
         :date => date(article),
         :body => body(article)
