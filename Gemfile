@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.2.4'
 
 gem 'rake'
-gem 'rollin'
+gem 'redcarpet'
 
 group 'test' do
   gem 'rspec'
