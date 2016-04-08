@@ -1,0 +1,80 @@
+<div class="highlight"><pre><span class="gd">-bind-libs-9.8.2-0.37.rc1.el6_7.6.x86_64</span>
+<span class="gi">+bind-libs-9.8.2-0.37.rc1.el6_7.7.x86_64</span>
+
+<span class="gd">-ca-certificates-2015.2.4-65.0.1.el6_6.noarch</span>
+<span class="gi">+ca-certificates-2015.2.6-65.0.1.el6_7.noarch</span>
+
+<span class="gd">-foomatic-4.0.4-3.el6.x86_64</span>
+<span class="gi">+foomatic-4.0.4-5.el6_7.x86_64</span>
+
+<span class="gd">-kernel-2.6.32-573.18.1.el6.x86_64</span>
+<span class="gd">-kernel-devel-2.6.32-573.18.1.el6.x86_64</span>
+<span class="gd">-kernel-firmware-2.6.32-573.18.1.el6.noarch</span>
+<span class="gd">-kernel-headers-2.6.32-573.18.1.el6.x86_64</span>
+<span class="gi">+kernel-2.6.32-573.22.1.el6.x86_64</span>
+<span class="gi">+kernel-devel-2.6.32-573.22.1.el6.x86_64</span>
+<span class="gi">+kernel-firmware-2.6.32-573.22.1.el6.noarch</span>
+<span class="gi">+kernel-headers-2.6.32-573.22.1.el6.x86_64</span>
+<span class="gd">-krb5-devel-1.10.3-42.el6.x86_64</span>
+<span class="gd">-krb5-libs-1.10.3-42.el6.x86_64</span>
+<span class="gi">+krb5-devel-1.10.3-42z1.el6_7.x86_64</span>
+<span class="gi">+krb5-libs-1.10.3-42z1.el6_7.x86_64</span>
+
+<span class="gd">-nspr-4.10.8-2.el6_7.x86_64</span>
+<span class="gd">-nss-3.19.1-8.el6_7.x86_64</span>
+<span class="gi">+nspr-4.11.0-0.1.el6_7.x86_64</span>
+<span class="gi">+nss-3.21.0-0.3.el6_7.x86_64</span>
+<span class="gd">-nss-sysinit-3.19.1-8.el6_7.x86_64</span>
+<span class="gd">-nss-tools-3.19.1-8.el6_7.x86_64</span>
+<span class="gd">-nss-util-3.19.1-5.el6_7.x86_64</span>
+<span class="gi">+nss-sysinit-3.21.0-0.3.el6_7.x86_64</span>
+<span class="gi">+nss-tools-3.21.0-0.3.el6_7.x86_64</span>
+<span class="gi">+nss-util-3.21.0-0.3.el6_7.x86_64</span>
+
+<span class="gd">-openssh-5.3p1-112.el6_7.x86_64</span>
+<span class="gd">-openssh-6.6p1-6.6p1-20160308133056.x86_64</span>
+<span class="gd">-openssh-clients-5.3p1-112.el6_7.x86_64</span>
+<span class="gd">-openssh-server-5.3p1-112.el6_7.x86_64</span>
+<span class="gi">+openssh-5.3p1-114.el6_7.x86_64</span>
+<span class="gi">+openssh-6.6p1-6.6p1-20160329133052.x86_64</span>
+<span class="gi">+openssh-clients-5.3p1-114.el6_7.x86_64</span>
+<span class="gi">+openssh-server-5.3p1-114.el6_7.x86_64</span>
+
+<span class="gd">-postgresql92-9.2.15-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql92-contrib-9.2.15-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql92-devel-9.2.15-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql92-libs-9.2.15-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql92-server-9.2.15-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql93-9.3.11-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql93-contrib-9.3.11-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql93-devel-9.3.11-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql93-libs-9.3.11-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql93-server-9.3.11-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql94-9.4.6-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql94-contrib-9.4.6-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql94-devel-9.4.6-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql94-libs-9.4.6-1PGDG.rhel6.x86_64</span>
+<span class="gd">-postgresql94-server-9.4.6-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql92-9.2.16-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql92-contrib-9.2.16-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql92-devel-9.2.16-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql92-libs-9.2.16-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql92-server-9.2.16-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql93-9.3.12-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql93-contrib-9.3.12-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql93-devel-9.3.12-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql93-libs-9.3.12-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql93-server-9.3.12-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql94-9.4.7-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql94-contrib-9.4.7-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql94-devel-9.4.7-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql94-libs-9.4.7-1PGDG.rhel6.x86_64</span>
+<span class="gi">+postgresql94-server-9.4.7-1PGDG.rhel6.x86_64</span>
+
+<span class="gd">-ruby-2.0.0-p598-2.0.0.598-20160308142435.x86_64</span>
+
+<span class="gd">-tzdata-2016a-2.el6.noarch</span>
+<span class="gd">-tzdata-java-2016a-2.el6.noarch</span>
+<span class="gi">+tzdata-2016c-1.el6.noarch</span>
+<span class="gi">+tzdata-java-2016c-1.el6.noarch</span>
+</pre></div>
