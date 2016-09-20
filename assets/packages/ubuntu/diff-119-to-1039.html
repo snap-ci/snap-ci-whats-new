@@ -4,12 +4,7 @@
 <link rel="stylesheet" href="pygments.css">
 </head>
 
-<div class="highlight"><pre><span></span># DIFF BETWEEN 119 AND 1026
-# 1) The packages that we build have the date in the name, so they will appear as modified. You may want to remove them
-# 2) You probably want to put some colour on this. I used http://pygments.org/, but it&#39;s not awesome, so feel free to use another one and update this readme
-# 3) This diff uses a heuritics to determine the package name, so pay attention to check if it in fact makes sense
-# 4) We have a list of all installed packages in our documentation. It&#39;s automatically updated once we deploy the docs, so you should trigger a docs build in order to update that
-
+<div class="syntax"><pre>
 # Removed
 <span class="gd">-busybox-static 1:1.21.0-1ubuntu1</span>
 <span class="gd">-cloud-image-utils 0.27-0ubuntu9.2</span>
@@ -22,9 +17,6 @@
 <span class="gd">-librados2 0.80.11-0ubuntu1.14.04.1</span>
 <span class="gd">-librbd1 0.80.11-0ubuntu1.14.04.1</span>
 <span class="gd">-lxc-templates 1.0.8-0ubuntu0.3</span>
-<span class="gd">-postgresql-9.2-postgis-scripts 2.2.2+dfsg-1.pgdg14.04+1</span>
-<span class="gd">-postgresql-9.3-postgis-scripts 2.2.2+dfsg-1.pgdg14.04+1</span>
-<span class="gd">-postgresql-9.4-postgis-scripts 2.2.2+dfsg-1.pgdg14.04+1</span>
 <span class="gd">-python-distro-info 0.12</span>
 <span class="gd">-python-lxml 3.3.3-1ubuntu0.1</span>
 <span class="gd">-python-pkg-resources 3.3-1ubuntu2</span>
@@ -32,28 +24,30 @@
 <span class="gd">-python-setuptools 3.3-1ubuntu2</span>
 <span class="gd">-qemu-utils 2.0.0+dfsg-2ubuntu1.24</span>
 <span class="gd">-sharutils 1:4.14-1ubuntu1</span>
-<span class="gd">-uuid-runtime 2.20.1-5.1ubuntu20.7</span>
 
 # New
-<span class="gi">+postgresql-9.2-postgis-2.2-scripts 2.2.2+dfsg-4.pgdg14.04+1</span>
-<span class="gi">+postgresql-9.3-postgis-2.2-scripts 2.2.2+dfsg-4.pgdg14.04+1</span>
-<span class="gi">+postgresql-9.4-postgis-2.2-scripts 2.2.2+dfsg-4.pgdg14.04+1</span>
+<span class="gi">+cgmanager-utils 0.24-0ubuntu7.5</span>
+<span class="gi">+google-chrome-driver-2.20 2.20.353124-20160916191439</span>
+<span class="gi">+google-chrome-driver-2.21 2.21.371461-20160916191439</span>
+<span class="gi">+google-chrome-driver-2.22 2.22.397932-20160916191439</span>
+<span class="gi">+google-chrome-driver-2.23 2.23.409687-20160916191439</span>
+<span class="gi">+google-chrome-driver-2.24 2.24.417424-20160916191439</span>
 
 # Updated
 <span class="gd">-avahi-daemon 0.6.31-4ubuntu1</span>
 <span class="gi">+avahi-daemon 0.6.31-4ubuntu1.1</span>
 
-<span class="gd">-cgmanager 0.24-0ubuntu7.5</span>
-<span class="gi">+cgmanager 0.39-2ubuntu2~ubuntu14.04.1</span>
+<span class="gd">-base-files 7.2ubuntu5.4</span>
+<span class="gi">+base-files 7.2ubuntu5.5</span>
 
-<span class="gi">+cgroup-lite 1.11~ubuntu14.04.2</span>
 <span class="gd">-cgroup-lite 1.9</span>
+<span class="gi">+cgroup-lite 1.11~ubuntu14.04.2</span>
 
 <span class="gd">-chef 11.18.12-1</span>
 <span class="gi">+chef 12.8.1-1</span>
 
 <span class="gd">-curl 7.35.0-1ubuntu2.6</span>
-<span class="gi">+curl 7.35.0-1ubuntu2.8</span>
+<span class="gi">+curl 7.35.0-1ubuntu2.9</span>
 
 <span class="gd">-dpkg 1.17.5ubuntu5.6</span>
 <span class="gi">+dpkg 1.17.5ubuntu5.7</span>
@@ -67,47 +61,65 @@
 <span class="gd">-flex 2.5.35-10.1ubuntu2</span>
 <span class="gi">+flex 2.5.39-8~ubuntu14.04.1</span>
 
+<span class="gd">-fontconfig 2.11.0-0ubuntu4.1</span>
+<span class="gi">+fontconfig 2.11.0-0ubuntu4.2</span>
+
+<span class="gd">-fontconfig-config 2.11.0-0ubuntu4.1</span>
+<span class="gi">+fontconfig-config 2.11.0-0ubuntu4.2</span>
+
+<span class="gd">-gnupg 1.4.16-1ubuntu2.3</span>
+<span class="gi">+gnupg 1.4.16-1ubuntu2.4</span>
+
 <span class="gd">-google-chrome-driver-2.10 2.10.267518-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.10 2.10.267518-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.10 2.10.267518-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.11 2.11.298611-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.11 2.11.298611-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.11 2.11.298611-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.12 2.12.301324-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.12 2.12.301324-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.12 2.12.301324-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.13 2.13.307649-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.13 2.13.307649-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.13 2.13.307649-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.14 2.14.313457-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.14 2.14.313457-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.14 2.14.313457-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.15 2.15.322448-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.15 2.15.322448-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.15 2.15.322448-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.16 2.16.333243-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.16 2.16.333243-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.16 2.16.333243-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.17 2.17.340116-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.17 2.17.340116-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.17 2.17.340116-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.18 2.18.343837-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.18 2.18.343837-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.18 2.18.343837-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-2.19 2.19.346067-20160428234331</span>
-<span class="gi">+google-chrome-driver-2.19 2.19.346067-20160720232636</span>
+<span class="gi">+google-chrome-driver-2.19 2.19.346067-20160916191439</span>
 
 <span class="gd">-google-chrome-driver-wrapper 1.0-20160428234331</span>
-<span class="gi">+google-chrome-driver-wrapper 1.0-20160720232636</span>
+<span class="gi">+google-chrome-driver-wrapper 1.0-20160916191439</span>
 
 <span class="gd">-google-chrome-stable 51.0.2704.84-1</span>
-<span class="gi">+google-chrome-stable 52.0.2743.116-1</span>
+<span class="gi">+google-chrome-stable 53.0.2785.116-1</span>
+
+<span class="gd">-gpgv 1.4.16-1ubuntu2.3</span>
+<span class="gi">+gpgv 1.4.16-1ubuntu2.4</span>
+
+<span class="gd">-initramfs-tools 0.103ubuntu4.3</span>
+<span class="gi">+initramfs-tools 0.103ubuntu4.4</span>
+
+<span class="gd">-initramfs-tools-bin 0.103ubuntu4.3</span>
+<span class="gi">+initramfs-tools-bin 0.103ubuntu4.4</span>
 
 <span class="gd">-isc-dhcp-client 4.2.4-7ubuntu12.4</span>
-<span class="gi">+isc-dhcp-client 4.2.4-7ubuntu12.5</span>
+<span class="gi">+isc-dhcp-client 4.2.4-7ubuntu12.6</span>
 
 <span class="gd">-isc-dhcp-common 4.2.4-7ubuntu12.4</span>
-<span class="gi">+isc-dhcp-common 4.2.4-7ubuntu12.5</span>
+<span class="gi">+isc-dhcp-common 4.2.4-7ubuntu12.6</span>
 
 <span class="gd">-language-pack-en 1:14.04+20150219</span>
 <span class="gi">+language-pack-en 1:14.04+20160720</span>
@@ -142,17 +154,14 @@
 <span class="gd">-libavahi-core7 0.6.31-4ubuntu1</span>
 <span class="gi">+libavahi-core7 0.6.31-4ubuntu1.1</span>
 
-<span class="gd">-libcgmanager0 0.24-0ubuntu7.5</span>
-<span class="gi">+libcgmanager0 0.39-2ubuntu2~ubuntu14.04.1</span>
-
 <span class="gd">-libcurl3 7.35.0-1ubuntu2.6</span>
-<span class="gi">+libcurl3 7.35.0-1ubuntu2.8</span>
+<span class="gi">+libcurl3 7.35.0-1ubuntu2.9</span>
 
 <span class="gd">-libcurl3-gnutls 7.35.0-1ubuntu2.6</span>
-<span class="gi">+libcurl3-gnutls 7.35.0-1ubuntu2.7</span>
+<span class="gi">+libcurl3-gnutls 7.35.0-1ubuntu2.9</span>
 
 <span class="gd">-libcurl4-openssl-dev 7.35.0-1ubuntu2.6</span>
-<span class="gi">+libcurl4-openssl-dev 7.35.0-1ubuntu2.8</span>
+<span class="gi">+libcurl4-openssl-dev 7.35.0-1ubuntu2.9</span>
 
 <span class="gd">-libdpkg-perl 1.17.5ubuntu5.6</span>
 <span class="gi">+libdpkg-perl 1.17.5ubuntu5.7</span>
@@ -184,8 +193,29 @@
 <span class="gd">-libfl-dev 2.5.35-10.1ubuntu2</span>
 <span class="gi">+libfl-dev 2.5.39-8~ubuntu14.04.1</span>
 
+<span class="gd">-libfontconfig1 2.11.0-0ubuntu4.1</span>
+<span class="gi">+libfontconfig1 2.11.0-0ubuntu4.2</span>
+
+<span class="gd">-libfontconfig1-dev 2.11.0-0ubuntu4.1</span>
+<span class="gi">+libfontconfig1-dev 2.11.0-0ubuntu4.2</span>
+
+<span class="gd">-libgcrypt11 1.5.3-2ubuntu4.3</span>
+<span class="gi">+libgcrypt11 1.5.3-2ubuntu4.4</span>
+
+<span class="gd">-libgcrypt11-dev 1.5.3-2ubuntu4.3</span>
+<span class="gi">+libgcrypt11-dev 1.5.3-2ubuntu4.4</span>
+
 <span class="gd">-libgd3 2.1.0-3ubuntu0.1</span>
-<span class="gi">+libgd3 2.1.0-3ubuntu0.2</span>
+<span class="gi">+libgd3 2.1.0-3ubuntu0.3</span>
+
+<span class="gd">-libharfbuzz0b 0.9.27-1ubuntu1</span>
+<span class="gi">+libharfbuzz0b 0.9.27-1ubuntu1.1</span>
+
+<span class="gd">-libidn11 1.28-1ubuntu2</span>
+<span class="gi">+libidn11 1.28-1ubuntu2.1</span>
+
+<span class="gd">-libidn11-dev 1.28-1ubuntu2</span>
+<span class="gi">+libidn11-dev 1.28-1ubuntu2.1</span>
 
 <span class="gd">-libldap-2.4-2 2.4.31-1+nmu2ubuntu8.2</span>
 <span class="gi">+libldap-2.4-2 2.4.31-1+nmu2ubuntu8.3</span>
@@ -197,10 +227,10 @@
 <span class="gi">+liblwgeom-2.2-5 2.2.2+dfsg-4.pgdg14.04+1</span>
 
 <span class="gd">-libmysqlclient-dev 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+libmysqlclient-dev 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+libmysqlclient-dev 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-libmysqlclient18 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+libmysqlclient18 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+libmysqlclient18 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-libnspr4 2:4.10.10-0ubuntu0.14.04.1</span>
 <span class="gi">+libnspr4 2:4.12-0ubuntu0.14.04.1</span>
@@ -227,31 +257,46 @@
 <span class="gi">+libxrandr2 2:1.5.0-1~trusty1</span>
 
 <span class="gd">-linux-libc-dev 3.13.0-87.133</span>
-<span class="gi">+linux-libc-dev 3.13.0-93.140</span>
+<span class="gi">+linux-libc-dev 3.13.0-96.143</span>
+
+<span class="gd">-lsb-base 4.1+Debian11ubuntu6.1</span>
+<span class="gi">+lsb-base 4.1+Debian11ubuntu6.2</span>
+
+<span class="gd">-lsb-release 4.1+Debian11ubuntu6.1</span>
+<span class="gi">+lsb-release 4.1+Debian11ubuntu6.2</span>
 
 <span class="gd">-mysql-client 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+mysql-client 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+mysql-client 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-mysql-client-5.5 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+mysql-client-5.5 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+mysql-client-5.5 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-mysql-client-core-5.5 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+mysql-client-core-5.5 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+mysql-client-core-5.5 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-mysql-common 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+mysql-common 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+mysql-common 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-mysql-server 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+mysql-server 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+mysql-server 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-mysql-server-5.5 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+mysql-server-5.5 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+mysql-server-5.5 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-mysql-server-core-5.5 5.5.49-0ubuntu0.14.04.1</span>
-<span class="gi">+mysql-server-core-5.5 5.5.50-0ubuntu0.14.04.1</span>
+<span class="gi">+mysql-server-core-5.5 5.5.52-0ubuntu0.14.04.1</span>
 
 <span class="gd">-nodejs-0.10.28 0.10.28-20160428234212</span>
 <span class="gi">+nodejs-0.10.28 0.10.28-20160721000530</span>
+
+<span class="gd">-openssh-client 1:6.6p1-2ubuntu2.7</span>
+<span class="gi">+openssh-client 1:6.6p1-2ubuntu2.8</span>
+
+<span class="gd">-openssh-server 1:6.6p1-2ubuntu2.7</span>
+<span class="gi">+openssh-server 1:6.6p1-2ubuntu2.8</span>
+
+<span class="gd">-openssh-sftp-server 1:6.6p1-2ubuntu2.7</span>
+<span class="gi">+openssh-sftp-server 1:6.6p1-2ubuntu2.8</span>
 
 <span class="gd">-phantomjs 1.9.2-20160428234305</span>
 <span class="gi">+phantomjs 1.9.2-20160720232806</span>
@@ -259,17 +304,26 @@
 <span class="gd">-postgresql-9.2 9.2.17-1.pgdg14.04+1</span>
 <span class="gi">+postgresql-9.2 9.2.18-1.pgdg14.04+1</span>
 
+<span class="gd">-postgresql-9.2-postgis-scripts 2.2.2+dfsg-1.pgdg14.04+1</span>
+<span class="gi">+postgresql-9.2-postgis-2.2-scripts 2.2.2+dfsg-4.pgdg14.04+1</span>
+
 <span class="gd">-postgresql-9.2-postgis-2.2 2.2.2+dfsg-1.pgdg14.04+1</span>
 <span class="gi">+postgresql-9.2-postgis-2.2 2.2.2+dfsg-4.pgdg14.04+1</span>
 
 <span class="gd">-postgresql-9.3 9.3.13-1.pgdg14.04+1</span>
 <span class="gi">+postgresql-9.3 9.3.14-1.pgdg14.04+1</span>
 
+<span class="gd">-postgresql-9.3-postgis-scripts 2.2.2+dfsg-1.pgdg14.04+1</span>
+<span class="gi">++postgresql-9.3-postgis-2.2-scripts 2.2.2+dfsg-4.pgdg14.04+1</span>
+
 <span class="gd">-postgresql-9.3-postgis-2.2 2.2.2+dfsg-1.pgdg14.04+1</span>
 <span class="gi">+postgresql-9.3-postgis-2.2 2.2.2+dfsg-4.pgdg14.04+1</span>
 
 <span class="gd">-postgresql-9.4 9.4.8-1.pgdg14.04+1</span>
 <span class="gi">+postgresql-9.4 9.4.9-1.pgdg14.04+1</span>
+
+<span class="gd">-postgresql-9.4-postgis-scripts 2.2.2+dfsg-1.pgdg14.04+1</span>
+<span class="gi">+postgresql-9.4-postgis-2.2-scripts 2.2.2+dfsg-4.pgdg14.04+1</span>
 
 <span class="gd">-postgresql-9.4-postgis-2.2 2.2.2+dfsg-1.pgdg14.04+1</span>
 <span class="gi">+postgresql-9.4-postgis-2.2 2.2.2+dfsg-4.pgdg14.04+1</span>
@@ -336,6 +390,6 @@
 
 <span class="gd">-wget 1.15-1ubuntu1.14.04.1</span>
 <span class="gi">+wget 1.15-1ubuntu1.14.04.2</span>
-</pre></div>
 
-</html
+</pre></div>
+</html>
