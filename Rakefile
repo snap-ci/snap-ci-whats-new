@@ -18,6 +18,51 @@ task :process do
   sh("cp -r assets #{OUTPUT_PATH}")
 end
 
+desc 'Generate colored diffs from {centos|ubuntu}.diff'
+task :diff, [:file_name] do |t, args|
+  file_name = args[:file_name]
+  source = ""
+  header = ""
+  lineno = 0
+  skip = true
+
+  File.read(file_name).each_line do |line|
+    if lineno == 0
+      # save the header line
+      header = line.match(/^#\s*(.+)\s*$/)[1]
+      source << line
+    end
+
+    lineno += 1
+
+    # after the first blank line, start adding keeping lines
+    skip = false if skip && line.strip == ""
+    source << line unless skip
+  end
+
+  formatter = Rouge::Formatters::HTMLPygments.new(Rouge::Formatters::HTML.new, "syntax")
+  lexer = Rouge::Lexers::Diff.new
+
+  platform = file_name.match(/(centos|ubuntu)/)[1]
+  raise "don't know which OS this diff is for! please name the file either centos.diff or ubuntu.diff" unless platform
+
+  m = header.match(/DIFF BETWEEN (\d+) AND (\d+)/)
+  from, to = m[1], m[2]
+
+  raise "Couldn't detect container versions from first line of #{file_name.inspect}" unless (from && to)
+  File.open(File.join("assets", "packages", platform, "diff-#{from}-to-#{to}.html"), "w") do |f|
+    f.puts "<html>"
+    f.puts "<head>"
+    f.puts "  <title>#{header}</title>"
+    f.puts "  <link rel=\"stylesheet\" href=\"pygments.css\" />"
+    f.puts "</head>"
+    f.puts "<body>"
+    f.puts formatter.format(lexer.lex(source))
+    f.puts "</body>"
+    f.puts "</html>"
+  end
+end
+
 desc 'Uploads content of output folder to S3'
 task :upload, [:s3_bucket] => :process do |_, params|
   s3_bucket = params[:s3_bucket]
